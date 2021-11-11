@@ -46,7 +46,3 @@ func getById(context *gin.Context) {
 func list(context *gin.Context) {
 	context.String(http.StatusOK, "blog list")
 }
-
-func handler(c *gin.Context) {
-	c.String(http.StatusOK, "url:%s", c.Request.URL)
-}
